@@ -1,0 +1,593 @@
+{
+    "$vuetify": {
+        "display": {
+            "xs": true,
+            "sm": false,
+            "md": false,
+            "lg": false,
+            "xl": false,
+            "xxl": false,
+            "smAndUp": false,
+            "mdAndUp": false,
+            "lgAndUp": false,
+            "xlAndUp": false,
+            "smAndDown": true,
+            "mdAndDown": true,
+            "lgAndDown": true,
+            "xlAndDown": true,
+            "name": "xs",
+            "height": 844,
+            "width": 390,
+            "mobile": true,
+            "mobileBreakpoint": "lg",
+            "platform": {
+                "android": false,
+                "ios": true,
+                "cordova": false,
+                "electron": false,
+                "chrome": false,
+                "edge": false,
+                "firefox": false,
+                "opera": false,
+                "win": false,
+                "mac": true,
+                "linux": false,
+                "touch": true,
+                "ssr": false
+            },
+            "thresholds": {
+                "xs": 0,
+                "sm": 600,
+                "md": 960,
+                "lg": 1280,
+                "xl": 1920,
+                "xxl": 2560
+            },
+            "ssr": true
+        },
+        "theme": {
+            "name": "dark",
+            "themes": {
+                "light": {
+                    "dark": false,
+                    "colors": {
+                        "background": "#FFFFFF",
+                        "surface": "#FFFFFF",
+                        "surface-variant": "#424242",
+                        "on-surface-variant": "#EEEEEE",
+                        "primary": "#6200EE",
+                        "primary-darken-1": "#3700B3",
+                        "secondary": "#03DAC6",
+                        "secondary-darken-1": "#018786",
+                        "error": "#B00020",
+                        "info": "#2196F3",
+                        "success": "#4CAF50",
+                        "warning": "#FB8C00"
+                    },
+                    "variables": {
+                        "border-color": "#000000",
+                        "border-opacity": 0.12,
+                        "high-emphasis-opacity": 0.87,
+                        "medium-emphasis-opacity": 0.6,
+                        "disabled-opacity": 0.38,
+                        "idle-opacity": 0.04,
+                        "hover-opacity": 0.04,
+                        "focus-opacity": 0.12,
+                        "selected-opacity": 0.08,
+                        "activated-opacity": 0.12,
+                        "pressed-opacity": 0.12,
+                        "dragged-opacity": 0.08,
+                        "theme-kbd": "#212529",
+                        "theme-on-kbd": "#FFFFFF",
+                        "theme-code": "#F5F5F5",
+                        "theme-on-code": "#000000"
+                    }
+                },
+                "dark": {
+                    "dark": true,
+                    "colors": {
+                        "background": "#121212",
+                        "surface": "#212121",
+                        "surface-variant": "#BDBDBD",
+                        "on-surface-variant": "#424242",
+                        "primary": "#BB86FC",
+                        "primary-darken-1": "#3700B3",
+                        "secondary": "#03DAC5",
+                        "secondary-darken-1": "#03DAC5",
+                        "error": "#CF6679",
+                        "info": "#2196F3",
+                        "success": "#4CAF50",
+                        "warning": "#FB8C00"
+                    },
+                    "variables": {
+                        "border-color": "#FFFFFF",
+                        "border-opacity": 0.12,
+                        "high-emphasis-opacity": 1,
+                        "medium-emphasis-opacity": 0.7,
+                        "disabled-opacity": 0.5,
+                        "idle-opacity": 0.1,
+                        "hover-opacity": 0.04,
+                        "focus-opacity": 0.12,
+                        "selected-opacity": 0.08,
+                        "activated-opacity": 0.12,
+                        "pressed-opacity": 0.16,
+                        "dragged-opacity": 0.08,
+                        "theme-kbd": "#212529",
+                        "theme-on-kbd": "#FFFFFF",
+                        "theme-code": "#343434",
+                        "theme-on-code": "#CCCCCC"
+                    }
+                }
+            },
+            "current": {
+                "dark": true,
+                "colors": {
+                    "background": "#121212",
+                    "surface": "#212121",
+                    "surface-variant": "#BDBDBD",
+                    "on-surface-variant": "#424242",
+                    "primary": "#BB86FC",
+                    "primary-darken-1": "#3700B3",
+                    "secondary": "#03DAC5",
+                    "secondary-darken-1": "#03DAC5",
+                    "error": "#CF6679",
+                    "info": "#2196F3",
+                    "success": "#4CAF50",
+                    "warning": "#FB8C00",
+                    "on-background": "#fff",
+                    "on-surface": "#fff",
+                    "on-primary": "#fff",
+                    "on-primary-darken-1": "#fff",
+                    "on-secondary": "#000",
+                    "on-secondary-darken-1": "#000",
+                    "on-error": "#fff",
+                    "on-info": "#fff",
+                    "on-success": "#fff",
+                    "on-warning": "#fff"
+                },
+                "variables": {
+                    "border-color": "#FFFFFF",
+                    "border-opacity": 0.12,
+                    "high-emphasis-opacity": 1,
+                    "medium-emphasis-opacity": 0.7,
+                    "disabled-opacity": 0.5,
+                    "idle-opacity": 0.1,
+                    "hover-opacity": 0.04,
+                    "focus-opacity": 0.12,
+                    "selected-opacity": 0.08,
+                    "activated-opacity": 0.12,
+                    "pressed-opacity": 0.16,
+                    "dragged-opacity": 0.08,
+                    "theme-kbd": "#212529",
+                    "theme-on-kbd": "#FFFFFF",
+                    "theme-code": "#343434",
+                    "theme-on-code": "#CCCCCC"
+                }
+            },
+            "computedThemes": {
+                "light": {
+                    "dark": false,
+                    "colors": {
+                        "background": "#FFFFFF",
+                        "surface": "#FFFFFF",
+                        "surface-variant": "#424242",
+                        "on-surface-variant": "#EEEEEE",
+                        "primary": "#6200EE",
+                        "primary-darken-1": "#3700B3",
+                        "secondary": "#03DAC6",
+                        "secondary-darken-1": "#018786",
+                        "error": "#B00020",
+                        "info": "#2196F3",
+                        "success": "#4CAF50",
+                        "warning": "#FB8C00",
+                        "on-background": "#000",
+                        "on-surface": "#000",
+                        "on-primary": "#fff",
+                        "on-primary-darken-1": "#fff",
+                        "on-secondary": "#000",
+                        "on-secondary-darken-1": "#fff",
+                        "on-error": "#fff",
+                        "on-info": "#fff",
+                        "on-success": "#fff",
+                        "on-warning": "#fff"
+                    },
+                    "variables": {
+                        "border-color": "#000000",
+                        "border-opacity": 0.12,
+                        "high-emphasis-opacity": 0.87,
+                        "medium-emphasis-opacity": 0.6,
+                        "disabled-opacity": 0.38,
+                        "idle-opacity": 0.04,
+                        "hover-opacity": 0.04,
+                        "focus-opacity": 0.12,
+                        "selected-opacity": 0.08,
+                        "activated-opacity": 0.12,
+                        "pressed-opacity": 0.12,
+                        "dragged-opacity": 0.08,
+                        "theme-kbd": "#212529",
+                        "theme-on-kbd": "#FFFFFF",
+                        "theme-code": "#F5F5F5",
+                        "theme-on-code": "#000000"
+                    }
+                },
+                "dark": {
+                    "dark": true,
+                    "colors": {
+                        "background": "#121212",
+                        "surface": "#212121",
+                        "surface-variant": "#BDBDBD",
+                        "on-surface-variant": "#424242",
+                        "primary": "#BB86FC",
+                        "primary-darken-1": "#3700B3",
+                        "secondary": "#03DAC5",
+                        "secondary-darken-1": "#03DAC5",
+                        "error": "#CF6679",
+                        "info": "#2196F3",
+                        "success": "#4CAF50",
+                        "warning": "#FB8C00",
+                        "on-background": "#fff",
+                        "on-surface": "#fff",
+                        "on-primary": "#fff",
+                        "on-primary-darken-1": "#fff",
+                        "on-secondary": "#000",
+                        "on-secondary-darken-1": "#000",
+                        "on-error": "#fff",
+                        "on-info": "#fff",
+                        "on-success": "#fff",
+                        "on-warning": "#fff"
+                    },
+                    "variables": {
+                        "border-color": "#FFFFFF",
+                        "border-opacity": 0.12,
+                        "high-emphasis-opacity": 1,
+                        "medium-emphasis-opacity": 0.7,
+                        "disabled-opacity": 0.5,
+                        "idle-opacity": 0.1,
+                        "hover-opacity": 0.04,
+                        "focus-opacity": 0.12,
+                        "selected-opacity": 0.08,
+                        "activated-opacity": 0.12,
+                        "pressed-opacity": 0.16,
+                        "dragged-opacity": 0.08,
+                        "theme-kbd": "#212529",
+                        "theme-on-kbd": "#FFFFFF",
+                        "theme-code": "#343434",
+                        "theme-on-code": "#CCCCCC"
+                    }
+                }
+            },
+            "themeClasses": "v-theme--dark",
+            "styles": ":root {\n      color-scheme: dark;\n    }\n    :root {\n      --v-theme-background: 18,18,18;\n      --v-theme-background-overlay-multiplier: 1;\n      --v-theme-surface: 33,33,33;\n      --v-theme-surface-overlay-multiplier: 1;\n      --v-theme-surface-variant: 189,189,189;\n      --v-theme-surface-variant-overlay-multiplier: 2;\n      --v-theme-on-surface-variant: 66,66,66;\n      --v-theme-primary: 187,134,252;\n      --v-theme-primary-overlay-multiplier: 2;\n      --v-theme-primary-darken-1: 55,0,179;\n      --v-theme-primary-darken-1-overlay-multiplier: 1;\n      --v-theme-secondary: 3,218,197;\n      --v-theme-secondary-overlay-multiplier: 2;\n      --v-theme-secondary-darken-1: 3,218,197;\n      --v-theme-secondary-darken-1-overlay-multiplier: 2;\n      --v-theme-error: 207,102,121;\n      --v-theme-error-overlay-multiplier: 2;\n      --v-theme-info: 33,150,243;\n      --v-theme-info-overlay-multiplier: 2;\n      --v-theme-success: 76,175,80;\n      --v-theme-success-overlay-multiplier: 2;\n      --v-theme-warning: 251,140,0;\n      --v-theme-warning-overlay-multiplier: 2;\n      --v-theme-on-background: 255,255,255;\n      --v-theme-on-surface: 255,255,255;\n      --v-theme-on-primary: 255,255,255;\n      --v-theme-on-primary-darken-1: 255,255,255;\n      --v-theme-on-secondary: 0,0,0;\n      --v-theme-on-secondary-darken-1: 0,0,0;\n      --v-theme-on-error: 255,255,255;\n      --v-theme-on-info: 255,255,255;\n      --v-theme-on-success: 255,255,255;\n      --v-theme-on-warning: 255,255,255;\n      --v-border-color: 255, 255, 255;\n      --v-border-opacity: 0.12;\n      --v-high-emphasis-opacity: 1;\n      --v-medium-emphasis-opacity: 0.7;\n      --v-disabled-opacity: 0.5;\n      --v-idle-opacity: 0.1;\n      --v-hover-opacity: 0.04;\n      --v-focus-opacity: 0.12;\n      --v-selected-opacity: 0.08;\n      --v-activated-opacity: 0.12;\n      --v-pressed-opacity: 0.16;\n      --v-dragged-opacity: 0.08;\n      --v-theme-kbd: 33, 37, 41;\n      --v-theme-on-kbd: 255, 255, 255;\n      --v-theme-code: 52, 52, 52;\n      --v-theme-on-code: 204, 204, 204;\n    }\n    .v-theme--light {\n      color-scheme: normal;\n      --v-theme-background: 255,255,255;\n      --v-theme-background-overlay-multiplier: 1;\n      --v-theme-surface: 255,255,255;\n      --v-theme-surface-overlay-multiplier: 1;\n      --v-theme-surface-variant: 66,66,66;\n      --v-theme-surface-variant-overlay-multiplier: 2;\n      --v-theme-on-surface-variant: 238,238,238;\n      --v-theme-primary: 98,0,238;\n      --v-theme-primary-overlay-multiplier: 2;\n      --v-theme-primary-darken-1: 55,0,179;\n      --v-theme-primary-darken-1-overlay-multiplier: 2;\n      --v-theme-secondary: 3,218,198;\n      --v-theme-secondary-overlay-multiplier: 1;\n      --v-theme-secondary-darken-1: 1,135,134;\n      --v-theme-secondary-darken-1-overlay-multiplier: 1;\n      --v-theme-error: 176,0,32;\n      --v-theme-error-overlay-multiplier: 2;\n      --v-theme-info: 33,150,243;\n      --v-theme-info-overlay-multiplier: 1;\n      --v-theme-success: 76,175,80;\n      --v-theme-success-overlay-multiplier: 1;\n      --v-theme-warning: 251,140,0;\n      --v-theme-warning-overlay-multiplier: 1;\n      --v-theme-on-background: 0,0,0;\n      --v-theme-on-surface: 0,0,0;\n      --v-theme-on-primary: 255,255,255;\n      --v-theme-on-primary-darken-1: 255,255,255;\n      --v-theme-on-secondary: 0,0,0;\n      --v-theme-on-secondary-darken-1: 255,255,255;\n      --v-theme-on-error: 255,255,255;\n      --v-theme-on-info: 255,255,255;\n      --v-theme-on-success: 255,255,255;\n      --v-theme-on-warning: 255,255,255;\n      --v-border-color: 0, 0, 0;\n      --v-border-opacity: 0.12;\n      --v-high-emphasis-opacity: 0.87;\n      --v-medium-emphasis-opacity: 0.6;\n      --v-disabled-opacity: 0.38;\n      --v-idle-opacity: 0.04;\n      --v-hover-opacity: 0.04;\n      --v-focus-opacity: 0.12;\n      --v-selected-opacity: 0.08;\n      --v-activated-opacity: 0.12;\n      --v-pressed-opacity: 0.12;\n      --v-dragged-opacity: 0.08;\n      --v-theme-kbd: 33, 37, 41;\n      --v-theme-on-kbd: 255, 255, 255;\n      --v-theme-code: 245, 245, 245;\n      --v-theme-on-code: 0, 0, 0;\n    }\n    .v-theme--dark {\n      color-scheme: dark;\n      --v-theme-background: 18,18,18;\n      --v-theme-background-overlay-multiplier: 1;\n      --v-theme-surface: 33,33,33;\n      --v-theme-surface-overlay-multiplier: 1;\n      --v-theme-surface-variant: 189,189,189;\n      --v-theme-surface-variant-overlay-multiplier: 2;\n      --v-theme-on-surface-variant: 66,66,66;\n      --v-theme-primary: 187,134,252;\n      --v-theme-primary-overlay-multiplier: 2;\n      --v-theme-primary-darken-1: 55,0,179;\n      --v-theme-primary-darken-1-overlay-multiplier: 1;\n      --v-theme-secondary: 3,218,197;\n      --v-theme-secondary-overlay-multiplier: 2;\n      --v-theme-secondary-darken-1: 3,218,197;\n      --v-theme-secondary-darken-1-overlay-multiplier: 2;\n      --v-theme-error: 207,102,121;\n      --v-theme-error-overlay-multiplier: 2;\n      --v-theme-info: 33,150,243;\n      --v-theme-info-overlay-multiplier: 2;\n      --v-theme-success: 76,175,80;\n      --v-theme-success-overlay-multiplier: 2;\n      --v-theme-warning: 251,140,0;\n      --v-theme-warning-overlay-multiplier: 2;\n      --v-theme-on-background: 255,255,255;\n      --v-theme-on-surface: 255,255,255;\n      --v-theme-on-primary: 255,255,255;\n      --v-theme-on-primary-darken-1: 255,255,255;\n      --v-theme-on-secondary: 0,0,0;\n      --v-theme-on-secondary-darken-1: 0,0,0;\n      --v-theme-on-error: 255,255,255;\n      --v-theme-on-info: 255,255,255;\n      --v-theme-on-success: 255,255,255;\n      --v-theme-on-warning: 255,255,255;\n      --v-border-color: 255, 255, 255;\n      --v-border-opacity: 0.12;\n      --v-high-emphasis-opacity: 1;\n      --v-medium-emphasis-opacity: 0.7;\n      --v-disabled-opacity: 0.5;\n      --v-idle-opacity: 0.1;\n      --v-hover-opacity: 0.04;\n      --v-focus-opacity: 0.12;\n      --v-selected-opacity: 0.08;\n      --v-activated-opacity: 0.12;\n      --v-pressed-opacity: 0.16;\n      --v-dragged-opacity: 0.08;\n      --v-theme-kbd: 33, 37, 41;\n      --v-theme-on-kbd: 255, 255, 255;\n      --v-theme-code: 52, 52, 52;\n      --v-theme-on-code: 204, 204, 204;\n    }\n    .bg-background {\n      --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);\n      background-color: rgb(var(--v-theme-background)) !important;\n      color: rgb(var(--v-theme-on-background)) !important;\n    }\n    .bg-surface {\n      --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);\n      background-color: rgb(var(--v-theme-surface)) !important;\n      color: rgb(var(--v-theme-on-surface)) !important;\n    }\n    .bg-surface-variant {\n      --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);\n      background-color: rgb(var(--v-theme-surface-variant)) !important;\n      color: rgb(var(--v-theme-on-surface-variant)) !important;\n    }\n    .bg-primary {\n      --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);\n      background-color: rgb(var(--v-theme-primary)) !important;\n      color: rgb(var(--v-theme-on-primary)) !important;\n    }\n    .bg-primary-darken-1 {\n      --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);\n      background-color: rgb(var(--v-theme-primary-darken-1)) !important;\n      color: rgb(var(--v-theme-on-primary-darken-1)) !important;\n    }\n    .bg-secondary {\n      --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);\n      background-color: rgb(var(--v-theme-secondary)) !important;\n      color: rgb(var(--v-theme-on-secondary)) !important;\n    }\n    .bg-secondary-darken-1 {\n      --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);\n      background-color: rgb(var(--v-theme-secondary-darken-1)) !important;\n      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;\n    }\n    .bg-error {\n      --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);\n      background-color: rgb(var(--v-theme-error)) !important;\n      color: rgb(var(--v-theme-on-error)) !important;\n    }\n    .bg-info {\n      --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);\n      background-color: rgb(var(--v-theme-info)) !important;\n      color: rgb(var(--v-theme-on-info)) !important;\n    }\n    .bg-success {\n      --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);\n      background-color: rgb(var(--v-theme-success)) !important;\n      color: rgb(var(--v-theme-on-success)) !important;\n    }\n    .bg-warning {\n      --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);\n      background-color: rgb(var(--v-theme-warning)) !important;\n      color: rgb(var(--v-theme-on-warning)) !important;\n    }\n    .text-background {\n      color: rgb(var(--v-theme-background)) !important;\n    }\n    .border-background {\n      --v-border-color: var(--v-theme-background);\n    }\n    .text-surface {\n      color: rgb(var(--v-theme-surface)) !important;\n    }\n    .border-surface {\n      --v-border-color: var(--v-theme-surface);\n    }\n    .text-surface-variant {\n      color: rgb(var(--v-theme-surface-variant)) !important;\n    }\n    .border-surface-variant {\n      --v-border-color: var(--v-theme-surface-variant);\n    }\n    .on-surface-variant {\n      color: rgb(var(--v-theme-on-surface-variant)) !important;\n    }\n    .text-primary {\n      color: rgb(var(--v-theme-primary)) !important;\n    }\n    .border-primary {\n      --v-border-color: var(--v-theme-primary);\n    }\n    .text-primary-darken-1 {\n      color: rgb(var(--v-theme-primary-darken-1)) !important;\n    }\n    .border-primary-darken-1 {\n      --v-border-color: var(--v-theme-primary-darken-1);\n    }\n    .text-secondary {\n      color: rgb(var(--v-theme-secondary)) !important;\n    }\n    .border-secondary {\n      --v-border-color: var(--v-theme-secondary);\n    }\n    .text-secondary-darken-1 {\n      color: rgb(var(--v-theme-secondary-darken-1)) !important;\n    }\n    .border-secondary-darken-1 {\n      --v-border-color: var(--v-theme-secondary-darken-1);\n    }\n    .text-error {\n      color: rgb(var(--v-theme-error)) !important;\n    }\n    .border-error {\n      --v-border-color: var(--v-theme-error);\n    }\n    .text-info {\n      color: rgb(var(--v-theme-info)) !important;\n    }\n    .border-info {\n      --v-border-color: var(--v-theme-info);\n    }\n    .text-success {\n      color: rgb(var(--v-theme-success)) !important;\n    }\n    .border-success {\n      --v-border-color: var(--v-theme-success);\n    }\n    .text-warning {\n      color: rgb(var(--v-theme-warning)) !important;\n    }\n    .border-warning {\n      --v-border-color: var(--v-theme-warning);\n    }\n    .on-background {\n      color: rgb(var(--v-theme-on-background)) !important;\n    }\n    .on-surface {\n      color: rgb(var(--v-theme-on-surface)) !important;\n    }\n    .on-primary {\n      color: rgb(var(--v-theme-on-primary)) !important;\n    }\n    .on-primary-darken-1 {\n      color: rgb(var(--v-theme-on-primary-darken-1)) !important;\n    }\n    .on-secondary {\n      color: rgb(var(--v-theme-on-secondary)) !important;\n    }\n    .on-secondary-darken-1 {\n      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;\n    }\n    .on-error {\n      color: rgb(var(--v-theme-on-error)) !important;\n    }\n    .on-info {\n      color: rgb(var(--v-theme-on-info)) !important;\n    }\n    .on-success {\n      color: rgb(var(--v-theme-on-success)) !important;\n    }\n    .on-warning {\n      color: rgb(var(--v-theme-on-warning)) !important;\n    }\n",
+            "global": {
+                "name": "dark",
+                "current": {
+                    "dark": true,
+                    "colors": {
+                        "background": "#121212",
+                        "surface": "#212121",
+                        "surface-variant": "#BDBDBD",
+                        "on-surface-variant": "#424242",
+                        "primary": "#BB86FC",
+                        "primary-darken-1": "#3700B3",
+                        "secondary": "#03DAC5",
+                        "secondary-darken-1": "#03DAC5",
+                        "error": "#CF6679",
+                        "info": "#2196F3",
+                        "success": "#4CAF50",
+                        "warning": "#FB8C00",
+                        "on-background": "#fff",
+                        "on-surface": "#fff",
+                        "on-primary": "#fff",
+                        "on-primary-darken-1": "#fff",
+                        "on-secondary": "#000",
+                        "on-secondary-darken-1": "#000",
+                        "on-error": "#fff",
+                        "on-info": "#fff",
+                        "on-success": "#fff",
+                        "on-warning": "#fff"
+                    },
+                    "variables": {
+                        "border-color": "#FFFFFF",
+                        "border-opacity": 0.12,
+                        "high-emphasis-opacity": 1,
+                        "medium-emphasis-opacity": 0.7,
+                        "disabled-opacity": 0.5,
+                        "idle-opacity": 0.1,
+                        "hover-opacity": 0.04,
+                        "focus-opacity": 0.12,
+                        "selected-opacity": 0.08,
+                        "activated-opacity": 0.12,
+                        "pressed-opacity": 0.16,
+                        "dragged-opacity": 0.08,
+                        "theme-kbd": "#212529",
+                        "theme-on-kbd": "#FFFFFF",
+                        "theme-code": "#343434",
+                        "theme-on-code": "#CCCCCC"
+                    }
+                }
+            }
+        },
+        "icons": {
+            "defaultSet": "mdi",
+            "sets": {
+                "svg": {
+                    "component": {
+                        "name": "VSvgIcon",
+                        "inheritAttrs": false,
+                        "props": {
+                            "icon": {
+                                "type": [
+                                    null,
+                                    null,
+                                    null,
+                                    null
+                                ],
+                                "source": "icon"
+                            },
+                            "tag": {
+                                "required": true,
+                                "source": "icon"
+                            }
+                        }
+                    }
+                },
+                "class": {
+                    "component": {
+                        "name": "VClassIcon",
+                        "props": {
+                            "icon": {
+                                "type": [
+                                    null,
+                                    null,
+                                    null,
+                                    null
+                                ],
+                                "source": "icon"
+                            },
+                            "tag": {
+                                "required": true,
+                                "source": "icon"
+                            }
+                        }
+                    }
+                },
+                "mdi": {}
+            },
+            "aliases": {
+                "collapse": "mdi-chevron-up",
+                "complete": "mdi-check",
+                "cancel": "mdi-close-circle",
+                "close": "mdi-close",
+                "delete": "mdi-close-circle",
+                "clear": "mdi-close-circle",
+                "success": "mdi-check-circle",
+                "info": "mdi-information",
+                "warning": "mdi-alert-circle",
+                "error": "mdi-close-circle",
+                "prev": "mdi-chevron-left",
+                "next": "mdi-chevron-right",
+                "checkboxOn": "mdi-checkbox-marked",
+                "checkboxOff": "mdi-checkbox-blank-outline",
+                "checkboxIndeterminate": "mdi-minus-box",
+                "delimiter": "mdi-circle",
+                "sortAsc": "mdi-arrow-up",
+                "sortDesc": "mdi-arrow-down",
+                "expand": "mdi-chevron-down",
+                "menu": "mdi-menu",
+                "subgroup": "mdi-menu-down",
+                "dropdown": "mdi-menu-down",
+                "radioOn": "mdi-radiobox-marked",
+                "radioOff": "mdi-radiobox-blank",
+                "edit": "mdi-pencil",
+                "ratingEmpty": "mdi-star-outline",
+                "ratingFull": "mdi-star",
+                "ratingHalf": "mdi-star-half-full",
+                "loading": "mdi-cached",
+                "first": "mdi-page-first",
+                "last": "mdi-page-last",
+                "unfold": "mdi-unfold-more-horizontal",
+                "file": "mdi-paperclip",
+                "plus": "mdi-plus",
+                "minus": "mdi-minus",
+                "calendar": "mdi-calendar",
+                "vuetify": [
+                    "M8.2241 14.2009L12 21L22 3H14.4459L8.2241 14.2009Z",
+                    [
+                        "M7.26303 12.4733L7.00113 12L2 3H12.5261C12.5261 3 12.5261 3 12.5261 3L7.26303 12.4733Z",
+                        0.6
+                    ]
+                ],
+                "vuetify-outline": "svg:M7.26 12.47 12.53 3H2L7.26 12.47ZM14.45 3 8.22 14.2 12 21 22 3H14.45ZM18.6 5 12 16.88 10.51 14.2 15.62 5ZM7.26 8.35 5.4 5H9.13L7.26 8.35Z"
+            }
+        },
+        "locale": {
+            "name": "vuetify",
+            "current": "en",
+            "fallback": "en",
+            "messages": {
+                "en": {
+                    "badge": "Badge",
+                    "close": "Close",
+                    "dataIterator": {
+                        "noResultsText": "No matching records found",
+                        "loadingText": "Loading items..."
+                    },
+                    "dataTable": {
+                        "itemsPerPageText": "Rows per page:",
+                        "ariaLabel": {
+                            "sortDescending": "Sorted descending.",
+                            "sortAscending": "Sorted ascending.",
+                            "sortNone": "Not sorted.",
+                            "activateNone": "Activate to remove sorting.",
+                            "activateDescending": "Activate to sort descending.",
+                            "activateAscending": "Activate to sort ascending."
+                        },
+                        "sortBy": "Sort by"
+                    },
+                    "dataFooter": {
+                        "itemsPerPageText": "Items per page:",
+                        "itemsPerPageAll": "All",
+                        "nextPage": "Next page",
+                        "prevPage": "Previous page",
+                        "firstPage": "First page",
+                        "lastPage": "Last page",
+                        "pageText": "{0}-{1} of {2}"
+                    },
+                    "dateRangeInput": {
+                        "divider": "to"
+                    },
+                    "datePicker": {
+                        "ok": "OK",
+                        "cancel": "Cancel",
+                        "range": {
+                            "title": "Select dates",
+                            "header": "Enter dates"
+                        },
+                        "title": "Select date",
+                        "header": "Enter date",
+                        "input": {
+                            "placeholder": "Enter date"
+                        }
+                    },
+                    "noDataText": "No data available",
+                    "carousel": {
+                        "prev": "Previous visual",
+                        "next": "Next visual",
+                        "ariaLabel": {
+                            "delimiter": "Carousel slide {0} of {1}"
+                        }
+                    },
+                    "calendar": {
+                        "moreEvents": "{0} more"
+                    },
+                    "input": {
+                        "clear": "Clear {0}",
+                        "prependAction": "{0} prepended action",
+                        "appendAction": "{0} appended action",
+                        "otp": "Please enter OTP character {0}"
+                    },
+                    "fileInput": {
+                        "counter": "{0} files",
+                        "counterSize": "{0} files ({1} in total)"
+                    },
+                    "timePicker": {
+                        "am": "AM",
+                        "pm": "PM"
+                    },
+                    "pagination": {
+                        "ariaLabel": {
+                            "root": "Pagination Navigation",
+                            "next": "Next page",
+                            "previous": "Previous page",
+                            "page": "Go to page {0}",
+                            "currentPage": "Page {0}, Current page",
+                            "first": "First page",
+                            "last": "Last page"
+                        }
+                    },
+                    "stepper": {
+                        "next": "Next",
+                        "prev": "Previous"
+                    },
+                    "rating": {
+                        "ariaLabel": {
+                            "item": "Rating {0} of {1}"
+                        }
+                    },
+                    "loading": "Loading...",
+                    "infiniteScroll": {
+                        "loadMore": "Load more",
+                        "empty": "No more"
+                    }
+                }
+            },
+            "isRtl": false,
+            "rtl": {
+                "af": false,
+                "ar": true,
+                "bg": false,
+                "ca": false,
+                "ckb": false,
+                "cs": false,
+                "de": false,
+                "el": false,
+                "en": false,
+                "es": false,
+                "et": false,
+                "fa": true,
+                "fi": false,
+                "fr": false,
+                "hr": false,
+                "hu": false,
+                "he": true,
+                "id": false,
+                "it": false,
+                "ja": false,
+                "ko": false,
+                "lv": false,
+                "lt": false,
+                "nl": false,
+                "no": false,
+                "pl": false,
+                "pt": false,
+                "ro": false,
+                "ru": false,
+                "sk": false,
+                "sl": false,
+                "srCyrl": false,
+                "srLatn": false,
+                "sv": false,
+                "th": false,
+                "tr": false,
+                "az": false,
+                "uk": false,
+                "vi": false,
+                "zhHans": false,
+                "zhHant": false
+            },
+            "rtlClasses": "v-locale--is-ltr"
+        },
+        "date": {
+            "locale": {
+                "af": "af-ZA",
+                "bg": "bg-BG",
+                "ca": "ca-ES",
+                "ckb": "",
+                "cs": "",
+                "de": "de-DE",
+                "el": "el-GR",
+                "en": "en-US",
+                "et": "et-EE",
+                "fa": "fa-IR",
+                "fi": "fi-FI",
+                "hr": "hr-HR",
+                "hu": "hu-HU",
+                "he": "he-IL",
+                "id": "id-ID",
+                "it": "it-IT",
+                "ja": "ja-JP",
+                "ko": "ko-KR",
+                "lv": "lv-LV",
+                "lt": "lt-LT",
+                "nl": "nl-NL",
+                "no": "nn-NO",
+                "pl": "pl-PL",
+                "pt": "pt-PT",
+                "ro": "ro-RO",
+                "ru": "ru-RU",
+                "sk": "sk-SK",
+                "sl": "sl-SI",
+                "srCyrl": "sr-SP",
+                "srLatn": "sr-SP",
+                "sv": "sv-SE",
+                "th": "th-TH",
+                "tr": "tr-TR",
+                "az": "az-AZ",
+                "uk": "uk-UA",
+                "vi": "vi-VN",
+                "zhHans": "zh-CN",
+                "zhHant": "zh-TW"
+            }
+        }
+    }
+}

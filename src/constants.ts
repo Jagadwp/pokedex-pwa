@@ -1,0 +1,1 @@
+export const basePokemonApi = 'https://pokeapi.co/api/v2/'
