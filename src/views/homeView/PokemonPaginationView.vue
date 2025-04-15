@@ -76,7 +76,7 @@ watch(data, (value) => {
     <div>
       <div v-if="isError">An error has occurred: {{ error }}</div>
 
-      <v-row v-if="data">
+      <v-row v-if="data" class="mt-1 mx-1">
         <v-col class="d-flex justify-center" :cols="layout.isTinyGridView ? 6 : 12" sm="6"
           :md="layout.isTinyGridView ? 6 : 4" v-for="(item, index) in data.results" :key="item.name"
           @click="handleToggle({ ...item })">

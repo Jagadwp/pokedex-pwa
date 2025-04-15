@@ -73,7 +73,7 @@ const handleToggle = ({ name, url }: { name: string; url: string }) => {
 <template>
   <Container ref="scrollContainer" @scroll="scrolling">
     <TinyCardSkeleton v-if="isLoading" />
-    <v-row v-if="data" v-for="(page, index) in data?.pages" :key="index">
+    <v-row v-if="data" class="mt-1 mx-1" v-for="(page, index) in data?.pages" :key="index">
       <v-col class="d-flex justify-center" :cols="layout.isTinyGridView ? 6 : 12" sm="6"
         :md="layout.isTinyGridView ? 6 : 4" v-for="item in page.pageData.results" :key="item.name"
         @click="handleToggle({ ...item })" style="width:fit-content;">
