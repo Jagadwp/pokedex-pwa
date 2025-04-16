@@ -74,17 +74,33 @@ const handleToggle = ({ name, url }: { name: string; url: string }) => {
   <Container ref="scrollContainer" @scroll="scrolling">
     <TinyCardSkeleton v-if="isLoading" />
     <v-row v-if="data" class="mt-1 mx-1" v-for="(page, index) in data?.pages" :key="index">
-      <v-col class="d-flex justify-center" :cols="layout.isTinyGridView ? 6 : 12" sm="6"
+      <v-col class="d-flex justify-center"
+        :cols="layout.isTinyGridView ? 6 : 12"
+        sm="6"
         :md="layout.isTinyGridView ? 6 : 4" v-for="item in page.pageData.results" :key="item.name"
-        @click="handleToggle({ ...item })" style="width:fit-content;">
-        <TinyCard v-if="layout.isTinyGridView" :title="item.name" :id="getUrlId(item.url)" :isLoading="isLoading" />
-        <Card v-else :title="item.name" :id="getUrlId(item.url)" :isLoading="isLoading" />
+        @click="handleToggle({ ...item })" style="width:fit-content;"
+      >
+        <TinyCard 
+          v-if="layout.isTinyGridView" 
+          :title="item.name" 
+          :id="getUrlId(item.url)" 
+          :isLoading="isLoading" 
+        />
+        <Card 
+          v-else :title="item.name" 
+          :id="getUrlId(item.url)" 
+          :isLoading="isLoading" 
+        />
       </v-col>
     </v-row>
     <div class="d-flex justify-center mt-4" v-if="isFetching">
       <v-progress-circular indeterminate color="purple"></v-progress-circular>
     </div>
-    <v-btn @click="nextPage" v-if="hasNextPage && !isFetching" class="mt-4 align-center" style="width: 100vw">
+    <v-btn @click="nextPage" 
+      v-if="hasNextPage && !isFetching" 
+      class="mt-4 align-center" 
+      style="width: 100vw"
+    >
       Load More Data
     </v-btn>
   </Container>

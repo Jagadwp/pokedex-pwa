@@ -77,19 +77,41 @@ watch(data, (value) => {
       <div v-if="isError">An error has occurred: {{ error }}</div>
 
       <v-row v-if="data" class="mt-1 mx-1">
-        <v-col class="d-flex justify-center" :cols="layout.isTinyGridView ? 6 : 12" sm="6"
+        <v-col 
+          class="d-flex justify-center" 
+          :cols="layout.isTinyGridView ? 6 : 12" sm="6"
           :md="layout.isTinyGridView ? 6 : 4" v-for="(item, index) in data.results" :key="item.name"
-          @click="handleToggle({ ...item })">
-          <TinyCard v-if="layout.isTinyGridView" :title="item.name" :id="getUrlId(item.url)" :isLoading="isLoading" />
-          <Card v-else :title="item.name" :id="getUrlId(item.url)" :isLoading="isLoading" />
+          @click="handleToggle({ ...item })"
+        >
+          <TinyCard 
+            v-if="layout.isTinyGridView" 
+            :title="item.name"
+            :id="getUrlId(item.url)" 
+            :isLoading="isLoading" 
+          />
+          <Card 
+            v-else 
+            :title="item.name"
+            :id="getUrlId(item.url)"
+            :isLoading="isLoading" 
+          />
         </v-col>
       </v-row>
       <div class="d-flex flex-column align-center" v-if="data">
-        <v-pagination :length="length" v-on:next="handlePagination" v-on:prev="handlePagination"
+        <v-pagination 
+          :length="length" 
+          v-on:next="handlePagination" 
+          v-on:prev="handlePagination"
           v-on:update:model-value="handlePagination" :density="sm || xs ? 'comfortable' : 'default'" class="mt-2"
-          total-visible="4">
+          total-visible="4"
+        >
         </v-pagination>
-        <v-select v-model="page" @update:model-value="handlePagination" :items="pageArray" density="compact"></v-select>
+        <v-select 
+          v-model="page" 
+          @update:model-value="handlePagination" 
+          :items="pageArray" 
+          density="compact"
+        ></v-select>
       </div>
     </div>
   </Container>

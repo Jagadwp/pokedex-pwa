@@ -51,8 +51,14 @@ watch(isPokemonItemOpen, (value) => {
 </script>
 
 <template>
-  <v-navigation-drawer location="bottom" temporary v-model="pokemonItem.isPokemonItemOpen"
-    style="height: 80vh; z-index: 9999" touchless class="rounded-t-xl ">
+  <v-navigation-drawer 
+    location="bottom" 
+    temporary 
+    v-model="pokemonItem.isPokemonItemOpen"
+    style="height: 80vh; z-index: 9999" 
+    touchless 
+    class="rounded-t-xl "
+  >
     <div v-if="isFetching"></div>
 
     <v-icon v-if="pokemonItem.id !== 1" color="grey-darken-3" icon="mdi-chevron-left" size="50px" :style="{

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useGetAllType, useGetOnePokemonByProps } from "@/api/pokemonApi";
+import { useGetOnePokemonByProps } from "@/api/pokemonApi";
 import { computed, ref } from "vue";
-import { useDevelopmentstore } from "@/hooks/useDevelopmentStore";
 import { CardProps } from "./type";
 import { upperCaseFirstLetter, imageExist } from "@/utils/function";
+import { typeColors } from "@/utils/allPokemonType";
 
 const cardProps = defineProps<CardProps>();
 
@@ -11,19 +11,28 @@ const imageUrl = computed(
   () =>
     `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${cardProps.id}.png`
 );
-const name = ref<string>(cardProps.title);
 const id = ref<number>(cardProps.id);
 const { data, isLoading } = useGetOnePokemonByProps(id);
-const { stage } = useDevelopmentstore();
 
-const { data: typeData } = useGetAllType(false);
+const cardBackgroundColor = computed(() => {
+  const typeName = data.value?.types?.[0]?.type?.name;
+  return typeName && typeColors[typeName] ? typeColors[typeName] : '#FFFFFF';
+}); 
 
 </script>
 
 <template>
   <v-hover v-slot="{ isHovering, props }">
-    <v-card width="30vw" min-width="285" v-bind="props" :elevation="isHovering ? 24 : 6" hover
-      :loading="cardProps.isLoading" class="rounded-b-shaped">
+    <v-card 
+      width="30vw" 
+      min-width="285" 
+      v-bind="props" 
+      :elevation="isHovering ? 24 : 6" 
+      hover
+      :loading="cardProps.isLoading" 
+      class="rounded-b-shaped"
+      :color="cardBackgroundColor"
+    >
       <div class="position-absolute" style="right: 10px; top: 10px">
         <v-chip class="elevation-1" size="small">ID: {{ cardProps.id }}</v-chip>
       </div>
