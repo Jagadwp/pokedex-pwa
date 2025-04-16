@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import router from '@/router'
-import { useDisplay } from 'vuetify'
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
 
@@ -24,13 +23,12 @@ const handlerNav = (path: string) => {
     router.push(path)
 }
 
-const { xs, sm } = useDisplay()
 const route = useRoute()
 
 const currentRouteName = computed(() => route.name)
 </script>
 <template>
-    <v-navigation-drawer expand-on-hover rail v-if="!xs && !sm">
+    <v-navigation-drawer expand-on-hover rail>
         <v-list>
             <v-img :class="'ma-2'"
                 :src="'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png'"></v-img>
