@@ -97,7 +97,7 @@ watch(data, (value) => {
           />
         </v-col>
       </v-row>
-      <div class="d-flex flex-column align-center" v-if="data">
+      <div class="d-flex flex-column align-center mt-2" v-if="data">
         <v-pagination 
           :length="length" 
           v-on:next="handlePagination" 

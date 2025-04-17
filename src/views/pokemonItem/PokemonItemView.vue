@@ -11,6 +11,7 @@ import PokemonVarietiesView from "./PokemonVarietiesView.vue";
 import PokemonItemTab from "@/components/tab/PokemonItemTab.vue";
 import { StopOverlayScroll, upperCaseFirstLetter, imageExist } from "@/utils/function";
 import PokemonMoviesView from "./PokemonMoviesView.vue";
+import { typeColors } from "@/utils/allPokemonType";
 
 const pokemonItem = usePokemonItemStore();
 const { name, id, isPokemonItemOpen } = storeToRefs(pokemonItem);
@@ -48,6 +49,11 @@ const imageUrl = computed(() => {
 watch(isPokemonItemOpen, (value) => {
   StopOverlayScroll(value)
 })
+
+const cardBackgroundColor = computed(() => {
+  const typeName = data.value?.types?.[0]?.type?.name;
+  return typeName && typeColors[typeName] ? typeColors[typeName] : '#FFFFFF';
+}); 
 </script>
 
 <template>
@@ -78,9 +84,15 @@ watch(isPokemonItemOpen, (value) => {
     <v-btn elevation="0" icon="mdi-close" style="position: absolute; top: 10px; left: 10px"
       @click="pokemonItem.isPokemonItemOpen = !pokemonItem.isPokemonItemOpen">
     </v-btn>
-    <div class="ma-4">
+    <div class="ma-4 pl-3">
       <v-container fluid v-if="data">
-        <div class="d-flex justify-center">
+        <div 
+          class="d-flex justify-center" 
+          :style="{ 
+            backgroundColor: cardBackgroundColor,
+            borderRadius: '0.75rem'
+          }"
+        >
           <div>
             <div class="position-relative">
 
@@ -92,7 +104,7 @@ watch(isPokemonItemOpen, (value) => {
               {{ upperCaseFirstLetter(data.name) }}
             </div>
             <div class="text-center">
-              <v-chip v-if="data" v-for="(item, index) in data.types" :key="index" class="mr-2 mt-2 elevation-1"
+              <v-chip v-if="data" v-for="(item, index) in data.types" :key="index" class="mr-2 mt-2 elevation-1 bg-surface"
                 size="small">
                 <v-img :src="imageExist(item.type.name)" height="15px" width="15px" class="mr-1 " />
                 {{ item.type.name }}

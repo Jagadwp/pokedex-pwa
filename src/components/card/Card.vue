@@ -34,7 +34,7 @@ const cardBackgroundColor = computed(() => {
       :color="cardBackgroundColor"
     >
       <div class="position-absolute" style="right: 10px; top: 10px">
-        <v-chip class="elevation-1" size="small">ID: {{ cardProps.id }}</v-chip>
+        <v-chip class="elevation-1 bg-surface" size="small">ID: {{ cardProps.id }}</v-chip>
       </div>
       <v-card-item class="d-flex justify-center align-center">
 
@@ -47,7 +47,7 @@ const cardBackgroundColor = computed(() => {
 
       <v-card-text class="d-flex">
         <v-chip style="width: 60px" class="mr-2" v-if="isLoading"></v-chip>
-        <v-chip v-if="data" v-for="(item, index) in data.types" :key="index" class="mr-2 elevation-1">
+        <v-chip v-if="data" v-for="(item, index) in data.types" :key="index" class="mr-2 elevation-1 bg-surface">
           <v-img :src="imageExist(item.type.name)" height="20px" width="20px" class="mr-2" />
           {{ upperCaseFirstLetter(item.type.name) }}
         </v-chip>

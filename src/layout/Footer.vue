@@ -43,7 +43,7 @@ const matchPathPattern = (itemValue: string) => {
       ? '#212121'
       : '#FFFFFF',
   }">
-    <div class="d-flex justify-space-around align-center mt-2 mb-6">
+    <div class="d-flex justify-space-around align-center my-3">
       <v-icon variant="text" @click="handlerNav(item.value)" :value="item.value" v-for="item in drawerItems"
         :key="item.value" :icon="matchPathPattern(item.value) ? item.activeIcon : item.icon" class="d-flex align-center">
       </v-icon>
