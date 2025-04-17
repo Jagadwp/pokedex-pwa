@@ -1,62 +1,62 @@
-# pokedex-vue-pwa
+# Pokedex PWA
 
-## Introduation
-This project is a PokeDex Progressive Web App that uses the [PokeAPI](https://pokeapi.co/) to get information about pokemon.
+## Introduction
+This is a Progressive Web App (PWA) Pokedex built using Vue.js, designed with a mobile-responsive layout for a smooth experience on all screen sizes. It fetches real-time Pokémon data from the PokeAPI.
 
-The pokedex is deployed on vercel: 
-
+👉 You can try it live here: https://pokedex-pwa-jagadwp.vercel.app/
 <br/>
 
 ## Library
-
 - [Vue3](https://vuejs.org/) composition api
 - [Vuetify](https://vuetifyjs.com/en/) for ui component 
 - [Pinia](https://pinia.vuejs.org/) for store management 
 - [Vue Router](https://router.vuejs.org/) for router
 
+### My Development Environment 
+- Node v18.20.8
+- Yarn v1.22.11
+
 <br/>
 
-## Desktop browser preview
+## Desktop Browser Preview
 <div style='display: flex;'>
-<img src="screenshot/pc-home.png" alt="Image" >
-<img src="screenshot/pc-item.png" alt="Image">
+<img src="https://github.com/user-attachments/assets/82631bc8-a004-43b5-9764-55e67acc9d7a" alt="Image" width="750">
+<br/>
+<br/>
+<img src="https://github.com/user-attachments/assets/14474313-8d49-413d-b1c6-aa600ecca759" alt="Image" width="750">
+<br/>
+<br/>
+<img src="https://github.com/user-attachments/assets/0cff8c58-0fdf-483a-a9dc-b9caf5282ce3" alt="Image" width="750">
 </div>
 
 <br/>
 
-## Phone Progressive web app preview
+## Phone Progressive Web App Preview
 <div style='display: flex;'>
-<img src="screenshot/pwa-phone-home.png" alt="Image" width="250">
-<img src="screenshot/pwa-phone-home-large.png" alt="Image" width="250">
-<img src="screenshot/pwa-phone-item.png" alt="Image" width="250">
+<img src="screenshot/pwa-phone-1.jpeg" alt="Image" width="250">
+<img src="screenshot/pwa-phone-2.jpeg" alt="Image" width="250">
+<img src="screenshot/pwa-phone-3.jpeg" alt="Image" width="250">
 </div>
 
 <br/>
 
-
-## Phone browser
-The presence of a bottom navigation bar will be absent.
-
-<br/>
-
-## Project setup
+## Project Setup
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles & Use Hot-Reloads for Development
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Compiles & Minifies for Production
 ```
 yarn build
 ```
 
 <br/>
-<br/>
 
-## Author
+## 🧑‍💻 Author
 
 Jagadwp
